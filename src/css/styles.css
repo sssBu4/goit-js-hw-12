@@ -1,0 +1,56 @@
+@import url('./reset.css');
+@import url('./timer.css');
+@import url('./snackbar.css');
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 0;
+  gap: 24px;
+}
+
+.link,
+.to-home {
+  padding: 15px 20px;
+  display: block;
+  border: 2px solid rgb(79, 134, 169);
+  border-radius: 12px;
+  background-color: rgb(79, 134, 169);
+  width: 140px;
+  text-align: center;
+
+  &:hover {
+    border: 2px solid rgb(25, 201, 25);
+    background-color: rgb(25, 201, 25);
+  }
+}
+
+section {
+  position: relative;
+  width: fit-content;
+  padding-bottom: 50px;
+}
+
+.to-home {
+  width: fit-content;
+  margin-top: 20px;
+  margin-left: 20px;
+}

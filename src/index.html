@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>homework-10</title>
+    <title>Image search app</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <ul class="list">
-      <li class="list-item">
-        <a href="./1-timer.html" class="link">Go to timer</a>
-      </li>
-      <li class="list-item">
-        <a href="./2-snackbar.html" class="link">Go to snackbar</a>
-      </li>
-    </ul>
+    <form class="search-form">
+      <div class="form-group">
+        <input type="text" class="form-control" name="query" />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    <ul class="gallery"></ul>
+    <button id="load-more" class="btn btn-secondary" style="display: none">
+      Load more
+    </button>
+    <span id="loading" class="loader" style="display: none"></span>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

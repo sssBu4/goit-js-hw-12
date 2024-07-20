@@ -4,18 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>homework-10</title>
+    <title>Image search app</title>
     
-    <link rel="stylesheet" href="/goit-js-hw-09/assets/index-142173d4.css">
+    <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-b0d10f48.js">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-1cd1f9d9.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-c0a59237.css">
   </head>
   <body>
-    <ul class="list">
-      <li class="list-item">
-        <a href="./1-timer.html" class="link">Go to timer</a>
-      </li>
-      <li class="list-item">
-        <a href="./2-snackbar.html" class="link">Go to snackbar</a>
-      </li>
-    </ul>
+    <form class="search-form">
+      <div class="form-group">
+        <input type="text" class="form-control" name="query" />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    <ul class="gallery"></ul>
+    <button id="load-more" class="btn btn-secondary" style="display: none">
+      Load more
+    </button>
+    <span id="loading" class="loader" style="display: none"></span>
+
+    
   </body>
 </html>
